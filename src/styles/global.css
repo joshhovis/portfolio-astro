@@ -278,12 +278,39 @@ h5 {
   .lg\:gap-48 {
     gap: 12rem;
   }
+}
 
+.links {
+  margin-bottom: 20px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links-site,
+.links-code {
+  padding: 0.56em 2em;
+  color: var(--accent-text-over);
+  line-height: 1.1;
+  border-radius: 99em;
+  overflow: hidden;
+  background-color: var(--accent-regular);
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+}
+
+@media (min-width: 20em) {
+  .links-site,
+  .links-code {
+    font-size: var(--text-lg);
+  }
+}
+
+@media (max-width: 768px) {
   .links {
-    margin-bottom: 20px;
-    margin-top: -30px;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 20px;
   }
 
   .links-site,
@@ -296,12 +323,5 @@ h5 {
     background-color: var(--accent-regular);
     box-shadow: var(--shadow-md);
     white-space: nowrap;
-  }
-
-  @media (min-width: 20em) {
-    .links-site,
-    .links-code {
-      font-size: var(--text-lg);
-    }
   }
 }
