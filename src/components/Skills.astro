@@ -1,0 +1,44 @@
+---
+import Icons from "./Icons.astro";
+---
+
+<section class="box skills">
+  <h2>Skills in my Toolbox</h2>
+  <Icons />
+
+  <style>
+    .box {
+      border: 1px solid var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background-color: var(--gray-999_40);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: row;
+      /* gap: 3rem; */
+    }
+
+    .skills > h2 {
+      border-bottom: 1px solid var(--gray-100);
+      margin-right: 50px;
+    }
+
+    @media (min-width: 50em) {
+      .box {
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+      }
+
+      .skills {
+        /* display: grid; */
+        display: flex;
+        justify-content: center;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* gap: 5rem; */
+      }
+    }
+  </style>
+</section>

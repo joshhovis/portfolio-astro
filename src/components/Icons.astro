@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon";
+
+const skills = [
+  { icon: "html5", name: "HTML" },
+  { icon: "css3", name: "CSS" },
+  { icon: "javascript", name: "JavaScript" },
+  { icon: "typescript", name: "TypeScript" },
+  { icon: "react", name: "React" },
+  { icon: "angular", name: "Angular" },
+  { icon: "astro", name: "Astro" },
+  { icon: "nodedotjs", name: "NodeJS" },
+  { icon: "bootstrap", name: "Bootstrap" },
+  { icon: "sass", name: "Sass" },
+  { icon: "tailwindcss", name: "TailwindCSS" },
+];
+---
+
+<div class="stack stack-skills lg:gap-4">
+  {
+    skills.map((skill) => (
+      <li class="skill">
+        <Icon name={"simple-icons:" + skill.icon} size="2rem" />
+        <p>{skill.name}</p>
+      </li>
+    ))
+  }
+</div>
+
+<style>
+  .stack-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    color: var(--accent-regular);
+    list-style-type: none;
+    margin: 0 25px;
+    text-align: center;
+  }
+
+  .skill > p {
+    font-size: 14px;
+  }
+
+  /* @media (min-width: 10em) {
+    .skill {
+      color: red;
+      display: flex;
+        justify-content: center;
+    }
+  } */
+</style>
