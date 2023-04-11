@@ -3,10 +3,15 @@ import Icon, { Props as IconProps } from "./Icon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 
 /** Main menu items */
-const textLinks: { label: string; href: string }[] = [
+const textLinks: { label: string; href: string; target?: string }[] = [
   { label: "Home", href: "/" },
   { label: "Work", href: "/work/" },
   { label: "About", href: "/about/" },
+  {
+    label: "Resume",
+    href: "../../public/assets/JoshuaHovisResume.pdf",
+    target: "_blank",
+  },
 ];
 
 /** Icon links to social profiles */
@@ -47,7 +52,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
   <div id="menu-content">
     <ul class="nav-items">
       {
-        textLinks.map(({ label, href }) => (
+        textLinks.map(({ label, href, target }) => (
           <li>
             <a
               aria-current={Astro.url.pathname === href}
@@ -60,6 +65,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
                 },
               ]}
               href={href}
+              target={target}
             >
               {label}
             </a>
