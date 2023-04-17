@@ -38,9 +38,8 @@ const projects = (await getCollection("work"))
 
         <img
           alt="Headshot photo of Joshua Hovis smiling"
-          width="500"
-          height="600"
-          src="/assets/portrait.jpg"
+          src="/assets/portrait.webp"
+          class="img-headshot"
         />
       </header>
 
@@ -92,7 +91,8 @@ const projects = (await getCollection("work"))
   }
 
   .hero img {
-    aspect-ratio: 5 / 4;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
     object-position: top;
     border-radius: 1.5rem;
@@ -114,7 +114,8 @@ const projects = (await getCollection("work"))
     }
 
     .hero img {
-      aspect-ratio: 3 / 4;
+      width: 500px;
+      height: 600px;
       border-radius: 4.5rem;
       object-fit: cover;
     }
@@ -221,4 +222,11 @@ const projects = (await getCollection("work"))
       height: 9.5rem;
     }
   }
+
+  /* @media (max-width: 768px) {
+    .img-headshot {
+      width: 500px;
+      height: 600px;
+    }
+  } */
 </style>

@@ -1,7 +1,7 @@
 ---
 title: GameHOC
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/stock-1.webp
 img_alt: Screenshot of the homepage for the GameHOC website.
 description: |
   Experience a comprehensive gaming database on our website, where you can easily browse through an extensive collection of games and curate your very own personalized selection of favorites.

@@ -1,7 +1,7 @@
 ---
 title: Personal Portfolio
 publishDate: 2019-10-02 00:00:00
-img: /assets/stock-4.jpg
+img: /assets/stock-4.webp
 img_alt: Screenshot of the homepage for the portfolio webpage of Joshua Hovis.
 description: |
   This portfolio serves as a platform to showcase my skills and past projects, providing potential employers or clients with a comprehensive look at my abilities and experience. Whether you need a front-end developer or more of a full-stack developer, I have got you covered!

@@ -1,7 +1,7 @@
 ---
 title: The Architech
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/stock-3.webp
 img_alt: Screenshot of the homepage for The Architech news website.
 description: |
   Stay updated with the latest in the tech world with our news portal! We curate the most recent and highly trending articles across various categories to present our users with a comprehensive view of the rapidly evolving tech landscape.
